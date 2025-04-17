@@ -1,12 +1,42 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Upload Words File</title>
-</head>
-<body>
-  <h2>Upload Words File</h2>
-  <input type="file" id="fileInput" accept=".txt" />
-  <div id="status"></div>
-  <script src="popup.js"></script>
-</body>
+  <head>
+    <title>Course Transfer</title>
+    <script src="popup.js" defer></script>
+    <style>
+      body { font-family: Arial; padding: 10px; width: 300px; }
+      select, button { margin: 5px 0; width: 100%; }
+    </style>
+  </head>
+  <body>
+    <h2>Transfer Guide</h2>
+    
+    <!-- Select Major -->
+    <label>Choose Major:</label>
+    <select id="majorSelect">
+      <option value="cs">Computer Science</option>
+      <option value="eng">Engineering</option>
+      <option value="bus">Business Administration</option>
+      <option value="arch">Architecture</option>
+    </select>
+
+    <!-- Select Course -->
+    <label>Choose Course:</label>
+    <select id="courseSelect"></select>
+
+    <!-- Select University -->
+    <label>Choose University:</label>
+    <select id="universitySelect">
+      <option value="vt">Virginia Tech</option>
+      <option value="uva">University of Virginia</option>
+      <option value="gmu">George Mason University</option>
+      <option value="vcu">Virginia Commonwealth University</option>
+    </select>
+
+    <!-- Button to see course equivalencies -->
+    <button id="showCoursesBtn">See Course Equivalents</button>
+
+    <!-- Results section -->
+    <div id="results"></div>
+  </body>
 </html>
