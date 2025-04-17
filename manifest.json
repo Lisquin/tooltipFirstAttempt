@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Word Highlighter with Tooltip",
+  "version": "1.0",
+  "description": "Highlights words from a text file and shows tooltips.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["style.css"]
+    }
+  ]
+}
