@@ -1,0 +1,17 @@
+.highlighted-word {
+  background-color: yellow;
+  cursor: pointer;
+  position: relative;
+}
+.highlighted-word:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: #333;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: pre-line;
+  z-index: 9999;
+}
