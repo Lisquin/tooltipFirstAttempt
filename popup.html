@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Upload Words File</title>
+  <style>
+    body { font-family: Arial, sans-serif; width: 220px; padding: 10px; }
+    .row { margin-bottom: 10px; }
+    label { margin-right: 8px; }
+    select, input[type="checkbox"] { margin-top: 4px; }
+  </style>
 </head>
 <body>
-  <h2>Upload Words File</h2>
-  <input type="file" id="fileInput" accept=".txt" />
-  <div id="status"></div>
+  <div class="row">
+    <label for="toggle">Enable Extension:</label>
+    <input type="checkbox" id="toggle">
+  </div>
+  <div class="row">
+    <label for="major">Select Major:</label>
+    <select id="major">
+      <option value="compsci">Comp Sci</option>
+      <option value="engineering">Engineering</option>
+      <option value="biology">Biology</option>
+    </select>
+  </div>
+  <div class="row" style="font-size: 13px; color: #555;">
+    Visit <b>www.nvcc.edu</b> to see course equivalencies.
+  </div>
   <script src="popup.js"></script>
 </body>
 </html>
