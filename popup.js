@@ -1,19 +1,20 @@
-document.getElementById('fileInput').addEventListener('change', function(e) {
-  const file = e.target.files[0];
-  if (!file) return;
+// Handles toggle and major selection, saves to chrome.storage
 
-  const reader = new FileReader();
-  reader.onload = function(event) {
-    const lines = event.target.result.split('\n');
-    const wordMap = {};
-    lines.forEach(line => {
-      // Each line should be: word|description
-      const [word, desc] = line.split('|');
-      if (word && desc) wordMap[word.trim()] = desc.trim();
-    });
-    chrome.storage.local.set({ wordMap }, function() {
-      document.getElementById('status').textContent = "Words loaded!";
-    });
-  };
-  reader.readAsText(file);
+const toggle = document.getElementById('toggle');
+const major = document.getElementById('major');
+
+// Load saved settings
+chrome.storage.sync.get(['enabled', 'selectedMajor'], (data) => {
+  toggle.checked = data.enabled ?? true;
+  major.value = data.selectedMajor ?? "compsci";
+});
+
+// Save toggle state
+toggle.addEventListener('change', () => {
+  chrome.storage.sync.set({ enabled: toggle.checked });
+});
+
+// Save major selection
+major.addEventListener('change', () => {
+  chrome.storage.sync.set({ selectedMajor: major.value });
 });
