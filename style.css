@@ -1,17 +1,23 @@
-.highlighted-word {
-  background-color: yellow;
+.nvcc-checkmark {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-left: 4px;
   cursor: pointer;
-  position: relative;
 }
-.highlighted-word:hover::after {
-  content: attr(data-tooltip);
+
+.nvcc-tooltip {
+  display: none;
   position: absolute;
-  left: 0;
-  top: 100%;
-  background: #333;
-  color: #fff;
-  padding: 4px 8px;
+  background: #fff;
+  color: #222;
+  border: 1px solid #57c257;
   border-radius: 4px;
-  white-space: pre-line;
+  padding: 7px 12px;
+  font-size: 13px;
+  box-shadow: 0 2px 8px rgba(50,150,50,0.12);
   z-index: 9999;
+  min-width: 120px;
+  max-width: 250px;
+  pointer-events: none;
 }
