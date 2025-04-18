@@ -1,0 +1,10 @@
+{
+  "EGR 120": {
+    "JMU": "ENGR 112",
+    "GMU": "ENGR 107"
+  },
+  "PHY 241": {
+    "JMU": "PHYS 240",
+    "GMU": "PHYS 160"
+  }
+}
