@@ -1,12 +1,20 @@
-function escapeRegExp(string) {
-  return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+// Utility: Parse CSV string into array of objects
+function parseCSV(csv) {
+  const lines = csv.trim().split('\n');
+  const header = lines[0].split(',').map(h => h.trim());
+  return lines.slice(1).map(line => {
+    const cols = line.split(',').map(c => c.trim());
+    let obj = {};
+    header.forEach((h, i) => obj[h] = cols[i]);
+    return obj;
+  });
 }
 
-function underlineCourses(courseMap) {
-  if (!courseMap || Object.keys(courseMap).length === 0) return;
-  const courses = Object.keys(courseMap).map(escapeRegExp);
-  if (courses.length === 0) return;
-  const regex = new RegExp('\\b(' + courses.join('|') + ')\\b', 'gi');
+// Highlight logic
+function underlineCourses(courseList) {
+  if (!courseList || courseList.length === 0) return;
+  const vccsCourses = courseList.map(row => row.vccs_course).filter(Boolean);
+  const regex = new RegExp('\\b(' + vccsCourses.map(w => w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|') + ')\\b', 'gi');
   walk(document.body);
 
   function walk(node) {
@@ -37,10 +45,11 @@ function underlineCourses(courseMap) {
       const span = document.createElement('span');
       span.className = 'underlined-course';
       span.textContent = match[0];
-      const data = courseMap[match[0]] || courseMap[match[0].toUpperCase()] || courseMap[match[0].toLowerCase()];
-      if (data) {
+      // Find the row for this course
+      const row = courseList.find(r => r.vccs_course.toLowerCase() === match[0].toLowerCase());
+      if (row) {
         span.setAttribute('data-tooltip',
-          `VT: ${data.vt}\nUVA: ${data.uva}\nGMU: ${data.gmu}`
+          `VT: ${row.vt_course}\nUVA: ${row.uva_course}\nGMU: ${row.gmu_course}`
         );
       }
       frag.appendChild(span);
@@ -89,10 +98,15 @@ function setupTooltip() {
   });
 }
 
-// Only run if enabled
-chrome.storage.local.get(['enabled', 'courseMap'], function(data) {
-  if (data.enabled && data.courseMap) {
-    underlineCourses(data.courseMap);
-    setupTooltip();
+// Only run if enabled, and fetch CSV
+chrome.storage.local.get('enabled', function(data) {
+  if (data.enabled) {
+    fetch(chrome.runtime.getURL('courses.csv'))
+      .then(res => res.text())
+      .then(csvText => {
+        const courseList = parseCSV(csvText);
+        underlineCourses(courseList);
+        setupTooltip();
+      });
   }
 });
