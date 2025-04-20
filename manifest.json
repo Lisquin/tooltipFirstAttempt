@@ -1,13 +1,13 @@
 {
   "manifest_version": 3,
-  "name": "Word Highlighter with Tooltip",
+  "name": "Course Mapper Highlighter",
   "version": "1.0",
-  "description": "Highlights words from a text file and shows tooltips.",
+  "description": "Underline VCCS courses and show mappings to VT, UVA, GMU.",
   "permissions": ["storage", "activeTab", "scripting"],
   "host_permissions": ["<all_urls>"],
   "action": {
     "default_popup": "popup.html",
-    "default_icon": "tooltipIcon.png"
+    "default_icon": "icon.png"
   },
   "content_scripts": [
     {
