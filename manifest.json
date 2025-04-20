@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "VCCS Course Converter",
+  "name": "Course Mapper Highlighter",
   "version": "1.0",
   "description": "Underline VCCS courses and show mappings to VT, UVA, GMU.",
   "permissions": ["storage", "activeTab", "scripting"],
@@ -16,7 +16,7 @@
       "css": ["style.css"]
     }
   ],
-   "web_accessible_resources": [
+  "web_accessible_resources": [
     {
       "resources": ["equivalency.csv"],
       "matches": ["<all_urls>"]
