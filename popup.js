@@ -5,12 +5,15 @@ chrome.storage.local.get('enabled', data => {
 });
 toggle.addEventListener('change', () => {
   chrome.storage.local.set({ enabled: toggle.checked });
-  document.getElementById('status').textContent = toggle.checked ? "Highlighting enabled" : "Highlighting disabled";
-  // Reload the page to apply change
+  // Send a message to the content script to toggle highlighting
   chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-    chrome.scripting.executeScript({target: {tabId: tabs[0].id}, func: () => window.location.reload()});
+    chrome.tabs.sendMessage(tabs[0].id, {
+      action: toggle.checked ? "enable_highlighting" : "disable_highlighting"
+    });
   });
+  document.getElementById('status').textContent = toggle.checked ? "Highlighting enabled" : "Highlighting disabled";
 });
+
 
 // Handle CSV upload
 document.getElementById('csvInput').addEventListener('change', function(e) {
