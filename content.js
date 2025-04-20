@@ -1,4 +1,7 @@
-// Utility: Parse CSV string into array of objects
+// --- CSV Parsing and Highlighting Functions ---
+
+let courseList = null; // Will hold parsed CSV data
+
 function parseCSV(csv) {
   const lines = csv.trim().split('\n');
   const header = lines[0].split(',').map(h => h.trim());
@@ -10,7 +13,6 @@ function parseCSV(csv) {
   });
 }
 
-// Highlight logic
 function underlineCourses(courseList) {
   if (!courseList || courseList.length === 0) return;
   const vccsCourses = courseList.map(row => row.vccs_course).filter(Boolean);
@@ -45,7 +47,6 @@ function underlineCourses(courseList) {
       const span = document.createElement('span');
       span.className = 'underlined-course';
       span.textContent = match[0];
-      // Find the row for this course
       const row = courseList.find(r => r.vccs_course.toLowerCase() === match[0].toLowerCase());
       if (row) {
         span.setAttribute('data-tooltip',
@@ -64,9 +65,19 @@ function underlineCourses(courseList) {
   }
 }
 
-// Tooltip logic
+function removeUnderlines() {
+  document.querySelectorAll('span.underlined-course').forEach(span => {
+    const parent = span.parentNode;
+    parent.replaceChild(document.createTextNode(span.textContent), span);
+    parent.normalize(); // Merge adjacent text nodes
+  });
+}
+
+// --- Tooltip logic (unchanged) ---
 function setupTooltip() {
+  if (document.getElementById('course-tooltip')) return; // Prevent duplicates
   let tooltip = document.createElement('div');
+  tooltip.id = 'course-tooltip';
   tooltip.style.position = 'absolute';
   tooltip.style.background = '#333';
   tooltip.style.color = '#fff';
@@ -98,15 +109,40 @@ function setupTooltip() {
   });
 }
 
-// Only run if enabled, and fetch CSV
-chrome.storage.local.get('enabled', function(data) {
-  if (data.enabled) {
-    fetch(chrome.runtime.getURL('equivalency.csv'))
+// --- Initialization ---
+
+// Fetch CSV once and store in memory
+function fetchAndCacheCourses(callback) {
+  if (courseList) {
+    callback(courseList);
+  } else {
+    fetch(chrome.runtime.getURL('courses.csv'))
       .then(res => res.text())
       .then(csvText => {
-        const courseList = parseCSV(csvText);
-        underlineCourses(courseList);
-        setupTooltip();
+        courseList = parseCSV(csvText);
+        callback(courseList);
       });
+  }
+}
+
+// Listen for toggle messages from popup
+chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+  if (message.action === "enable_highlighting") {
+    fetchAndCacheCourses(list => {
+      underlineCourses(list);
+      setupTooltip();
+    });
+  } else if (message.action === "disable_highlighting") {
+    removeUnderlines();
+  }
+});
+
+// On initial load, apply highlighting if enabled
+chrome.storage.local.get('enabled', function(data) {
+  if (data.enabled) {
+    fetchAndCacheCourses(list => {
+      underlineCourses(list);
+      setupTooltip();
+    });
   }
 });
