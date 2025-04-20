@@ -127,13 +127,22 @@ function fetchAndCacheCourses(callback) {
 
 // Listen for toggle messages from popup
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-  if (message.action === "enable_highlighting") {
-    fetchAndCacheCourses(list => {
-      underlineCourses(list);
-      setupTooltip();
+  if (message.action === "toggle_highlighting") {
+    chrome.storage.local.get('enabled', function(data) {
+      const newState = !data.enabled;
+      chrome.storage.local.set({ enabled: newState }, function() {
+        if (newState) {
+          // Enable highlighting
+          fetchAndCacheCourses(list => {
+            underlineCourses(list);
+            setupTooltip();
+          });
+        } else {
+          // Disable highlighting
+          removeUnderlines();
+        }
+      });
     });
-  } else if (message.action === "disable_highlighting") {
-    removeUnderlines();
   }
 });
 
