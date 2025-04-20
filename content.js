@@ -116,7 +116,7 @@ function fetchAndCacheCourses(callback) {
   if (courseList) {
     callback(courseList);
   } else {
-    fetch(chrome.runtime.getURL('courses.csv'))
+    fetch(chrome.runtime.getURL('equivalency.csv'))
       .then(res => res.text())
       .then(csvText => {
         courseList = parseCSV(csvText);
