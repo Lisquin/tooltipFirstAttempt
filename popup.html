@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Upload Words File</title>
+  <title>NOVA Transfer Checker</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h2>Upload Words File</h2>
-  <input type="file" id="fileInput" accept=".txt" />
-  <div id="status"></div>
+  <h1>NOVA Transfer</h1>
+
+  <label for="school-select">Select a school:</label>
+  <select id="school-select">
+    <option value="">-- Select a school --</option>
+    <option value="vt_course">Virginia Tech</option>
+    <option value="uva_course">University of Virginia</option>
+    <option value="gmu_course">George Mason University</option>
+  </select>
+
+  <label for="class-input">Type in your class:</label>
+  <input type="text" id="class-input" placeholder="e.g., csc201">
+
+  <button id="check-button">Check Transfer</button>
+
+  <div id="result"></div>
+
   <script src="popup.js"></script>
 </body>
 </html>
