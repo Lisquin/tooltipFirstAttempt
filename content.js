@@ -101,7 +101,7 @@ function setupTooltip() {
 // Only run if enabled, and fetch CSV
 chrome.storage.local.get('enabled', function(data) {
   if (data.enabled) {
-    fetch(chrome.runtime.getURL('courses.csv'))
+    fetch(chrome.runtime.getURL('equivalency.csv'))
       .then(res => res.text())
       .then(csvText => {
         const courseList = parseCSV(csvText);
