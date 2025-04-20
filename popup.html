@@ -1,49 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>NVCC Course Helper</title>
+  <title>NVCC Course Converter</title>
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: forestgreen; /* Forest green background */
-      color: #fff;                   /* White text */
-      min-width: 220px;
-    }
-    .top-bar {
-      background-color: #ffe600;     /* Dandelion yellow */
-      height: 32px;
-      display: flex;
-      align-items: center;
-      padding-left: 12px;
-      font-weight: bold;
-      color: #222;                   /* Optional: dark text for contrast on yellow */
-      font-size: 1.1em;
-      letter-spacing: 1px;
-    }
-    .content {
-      padding: 16px 12px 12px 12px;
-    }
-    label {
-      display: block;
-      margin: 10px 0 5px;
-    }
-    #status {
-      margin-top: 10px;
-      color: #ffe600; /* Dandelion yellow for status messages */
-    }
-    input[type="checkbox"] {
-      accent-color: #ffe600;
-    }
+    body { font-family: Arial, sans-serif; width: 220px; }
+    #status { margin-top: 10px; color: green; }
+    label { display: block; margin: 10px 0 5px; }
   </style>
 </head>
 <body>
-  <div class="top-bar">NVCC Course Convertor</div>
-  <div class="content">
-    <label for="toggle">Toggle Highlight On/Off</label>
-    <input type="checkbox" id="toggle" />
-    <div id="status"></div>
-  </div>
+  <h2>NVCC Course Convero=ter</h2>
+  <label for="toggle">Enable highlighting:</label>
+  <input type="checkbox" id="toggle" />
+  <div id="status"></div>
   <script src="popup.js"></script>
 </body>
 </html>
