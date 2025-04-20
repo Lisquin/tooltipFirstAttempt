@@ -1,0 +1,247 @@
+Index,vccs_course,vt_course,uva_course,gmu_course
+0,CHM 101,CHEM 1015 + CHEM 1025,CHEM 1210 ,CHEM 103
+1,CHM 102,No Equivalency,CHEM 1500 ,CHEM 104
+2,CHM 110,CHEM 1015,CHEM 1005T ,CHEM Elective
+3,CHM 111,CHEM 1035 + CHEM 1045,CHEM 1410 ,CHEM 213 & CHEM 211
+4,CHM 112,CHEM 1036 + CHEM 1046,CHEM 1000T  OR CHEM 1420 ,CHEM 214 & CHEM 212
+5,CHM 113,No Equivalency,CHEM 1410 ,No Equivalency
+6,CHM 114,No Equivalency,CHEM 1420 ,No Equivalency
+7,CHM 121,CHEM 1015 + CHEM 1025,CHEM 1210 ,CHEM 103
+8,CHM 122,No Equivalency,CHEM 1220 ,CHEM 104
+9,CHM 125,CHEM Elective,No Equivalency,CHEM Elective
+10,CHM 126,CHEM 1035 + CHEM 1045,No Equivalency,CHEM 251
+11,CHM 129,No Equivalency,No Equivalency,CHEM 155
+12,CHM 130,No Equivalency,No Equivalency,CHEM 156
+13,CHM 135,No Equivalency,CHEM 2000T ,No Equivalency
+14,CHM 140,No Equivalency,CHEM 2000T ,No Equivalency
+15,CHM 150,No Equivalency,CHEM 2000T ,No Equivalency
+16,CHM 190,No Equivalency,No Equivalency,GENL Elective
+17,CHM 195,No Equivalency,No Equivalency,CHEM Elective
+18,CHM 241,CHEM 2535,CHEM 2410 ,CHEM L313
+19,CHM 242,CHEM 2536,CHEM 2420 ,CHEM L314
+20,CHM 243,No Equivalency,CHEM 2411 ,CHEM Elective
+21,CHM 244,No Equivalency,CHEM 2421 ,CHEM Elective
+22,CHM 245,CHEM 2545 + CHEM Elective,CHEM 2311 ,CHEM L315
+23,CHM 246,CHEM 2546 + CHEM Elective,CHEM 2321 ,CHEM L318
+24,CHM 251,No Equivalency,CHEM 2000T ,No Equivalency
+25,CHM 252,No Equivalency,CHEM 2000T ,No Equivalency
+26,CHM 255,No Equivalency,CHEM 2000T ,No Equivalency
+27,CHM 260,BCHM 2024,CHEM 4440 ,CHEM Elective
+28,CHM 261,CHEM Elective,No Equivalency,No Equivalency
+29,CHM 290,No Equivalency,No Equivalency,CHEM Elective
+30,CHM 293,CHEM Elective,No Equivalency,No Equivalency
+31,CHM 295,CHEM Elective,No Equivalency,CHEM Elective
+32,CHM 296,No Equivalency,No Equivalency,No Equivalency
+33,CHM 297,No Equivalency,No Equivalency,No Equivalency
+34,CHM 298,CHEM Elective,No Equivalency,No Equivalency
+35,CHM 299,No Equivalency,No Equivalency,No Equivalency
+36,CSC 110,CS 1014,CS 1010 ,CS 100 & IT 103
+37,CSC 130,No Equivalency,No Equivalency,CS Elective
+38,CSC 155,No Equivalency,No Equivalency,IT 103
+39,CSC 185,No Equivalency,No Equivalency,CS Elective
+40,CSC 190,No Equivalency,No Equivalency,GENL Elective
+41,CSC 195,No Equivalency,CS 1000T ,CS Elective
+42,CSC 196,No Equivalency,No Equivalency,No Equivalency
+43,CSC 197,No Equivalency,No Equivalency,No Equivalency
+44,CSC 198,No Equivalency,No Equivalency,No Equivalency
+45,CSC 199,No Equivalency,No Equivalency,No Equivalency
+46,CSC 200,No Equivalency,No Equivalency,CS Elective
+47,CSC 201,No Equivalency,No Equivalency,CS 112
+48,CSC 202,No Equivalency,No Equivalency,CS 211
+49,CSC 205,CS 2505 + CS Elective,CS 2000T ,CS Elective
+50,CSC 206,No Equivalency,No Equivalency,CS Elective
+51,CSC 208,MATH 2534,CS 2120 ,MATH 125
+52,CSC 210,CS 1044 OR CS 1044 + CS Elective,CS 2000T ,CS Elective
+53,CSC 215,CS 2505 + CS Elective,CS 2130 ,CS Elective
+54,CSC 221,CS 1064,CS 1110 ,CS 108
+55,CSC 222,CS 1114 + CS Elective,CS 2000T ,CS 112
+56,CSC 223,CS 2114 + CS Elective,CS 2100 ,CS 211
+57,CSC 290,No Equivalency,No Equivalency,CS Elective
+58,CSC 295,No Equivalency,CS 2000T ,CS Elective
+59,CSC 296,No Equivalency,No Equivalency,No Equivalency
+60,CSC 297,No Equivalency,No Equivalency,No Equivalency
+61,CSC 298,No Equivalency,No Equivalency,No Equivalency
+62,CSC 299,No Equivalency,No Equivalency,No Equivalency
+63,CSC 90,No Equivalency,No Equivalency,No Equivalency
+64,CSC 95,No Equivalency,CS 1000T ,No Equivalency
+65,CSC 97,No Equivalency,No Equivalency,No Equivalency
+66,CSC 98,No Equivalency,No Equivalency,No Equivalency
+67,CSC 99,No Equivalency,No Equivalency,No Equivalency
+68,EGR 100,ENGR Elective,No Equivalency,UNIV Elective
+69,EGR 110,No Equivalency,MAE 2040 ,ME Elective
+70,EGR 111,No Equivalency,No Equivalency,ENGR Elective
+71,EGR 112,No Equivalency,No Equivalency,ENGR Elective
+72,EGR 115,No Equivalency,MAE 2040 ,ENGR Elective
+73,EGR 120,ENGE Elective,No Equivalency,ENGR 107
+74,EGR 121,ENGE 1215,ENGR 1010 ,ENGR 107
+75,EGR 122,ENGE 1216 + ENGE Elective,ENGR 1010 ,ME 151
+76,EGR 124,No Equivalency,No Equivalency,ENGR Elective
+77,EGR 125,ECE 1004 + ECE 2514 + ECE Elective,CS 1110 ,ENGR 125T
+78,EGR 126,CS Elective,CS 1110 ,ENGR Elective
+79,EGR 127,CS Elective or CS 1044,No Equivalency,CS Elective
+80,EGR 130,ENGR Elective,No Equivalency,ENGR Elective
+81,EGR 135,ENGR Elective,No Equivalency,CEIE 210 & ME 211
+82,EGR 136,ENGR Elective,No Equivalency,CEIE L310 & ME 212
+83,EGR 140,ESM 2104,MAE 2300 ,CEIE 210 & ME 211
+84,EGR 190,No Equivalency,No Equivalency,GENL Elective
+85,EGR 195,No Equivalency,No Equivalency,GENL Elective
+86,EGR 206,ISE 2014 OR ISE 2014 + ISE Elective,CE 2020 ,SYST L375
+87,EGR 216,ENGR Elective,No Equivalency,GENL Elective
+88,EGR 231,CHE 2114,No Equivalency,GENL Elective
+89,EGR 232,CHE 2164,No Equivalency,PHYS L307
+90,EGR 240,ESM 2104,MAE 2300 ,CEIE 210 & ME 211
+91,EGR 245,ESM 2304,MAE 2320 ,ME 231
+92,EGR 246,ESM 2204,MAE 2310 ,CEIE L310 & ME 212
+93,EGR 247,ESM Elective,No Equivalency,ENGR Elective & ME Elective
+94,EGR 248,ME Elective,MAE 2100 ,ME 221
+95,EGR 251,ECE 1X1C,ECE 2300 ,ECE Elective
+96,EGR 252,ECE 1X1D,No Equivalency,ECE Elective
+97,EGR 255,ECE 1X1E,ECE 2300 ,ECE Elective
+98,EGR 260,ECE 3054,No Equivalency,ECE Elective
+99,EGR 261,ECE 1X1F,No Equivalency,ECE Elective
+100,EGR 262,ECE 1X1G,No Equivalency,ECE Elective
+101,EGR 263,ECE Elective,No Equivalency,ECE Elective
+102,EGR 265,ECE Elective,ECE 2330 ,ECE L301
+103,EGR 270,ECE 2544 + Elective,ECE 2330 ,ECE 232 & ECE 231
+104,EGR 271,ECE 2054 + Elective,ECE 2300 ,ECE Elective & ECE 285
+105,EGR 272,ECE 2024 + Elective,ECE 2600 ,ECE Elective & ECE 286
+106,EGR 277,ECE Elective,No Equivalency,ENGR Elective
+107,EGR 278,ECE Elective,No Equivalency,ECE Elective
+108,EGR 280,CEE 3104,No Equivalency,CEIE L355
+109,EGR 282,CEE Elective,No Equivalency,CEIE 241
+110,EGR 290,No Equivalency,No Equivalency,GENL Elective
+111,EGR 295,ENGR Elective,No Equivalency,ENGR Elective
+112,ENG 134,ENGL Elective,No Equivalency,No Equivalency
+113,ITE 100,BUS Elective,CS 1000T ,IT Elective
+114,ITE 101,No Equivalency,No Equivalency,IT Elective
+115,ITE 102,No Equivalency,No Equivalency,IT Elective
+116,ITE 105,No Equivalency,No Equivalency,IT Elective
+117,ITE 109,No Equivalency,No Equivalency,IT Elective
+118,ITE 115,CS Elective,CS 1010 ,IT 103
+119,ITE 116,BIT Elective,No Equivalency,IT Elective
+120,ITE 119,No Equivalency,CS 1000T ,IT 104
+121,ITE 120,BUS Elective,CS 1010 ,IT 103
+122,ITE 128,No Equivalency,No Equivalency,GENL Elective
+123,ITE 129,No Equivalency,No Equivalency,GENL Elective
+124,ITE 130,CS Elective,No Equivalency,IT Elective
+125,ITE 131,No Equivalency,No Equivalency,GENL Elective
+126,ITE 140,ACIS 1504,No Equivalency,IT Elective
+127,ITE 141,No Equivalency,No Equivalency,IT Elective
+128,ITE 150,No Equivalency,No Equivalency,IT Elective
+129,ITE 151,No Equivalency,CS 1000T ,IT Elective
+130,ITE 152,VT 1XXP,CS 1000T ,IT 104
+131,ITE 160,No Equivalency,CS 1010 ,IT Elective
+132,ITE 170,No Equivalency,No Equivalency,IT Elective
+133,ITE 175,No Equivalency,No Equivalency,No Equivalency
+134,ITE 180,No Equivalency,No Equivalency,IT Elective
+135,ITE 182,No Equivalency,No Equivalency,IT Elective
+136,ITE 190,No Equivalency,No Equivalency,GENL Elective
+137,ITE 195,No Equivalency,No Equivalency,GENL Elective
+138,ITE 200,No Equivalency,No Equivalency,No Equivalency
+139,ITE 215,No Equivalency,No Equivalency,IT Elective
+140,ITE 221,No Equivalency,CS 2000T ,IT Elective
+141,ITE 221L,No Equivalency,No Equivalency,IT Elective
+142,ITE 225,No Equivalency,No Equivalency,IT Elective
+143,ITE 270,No Equivalency,No Equivalency,IT Elective
+144,ITE 290,No Equivalency,No Equivalency,IT Elective
+145,ITE 295,No Equivalency,No Equivalency,IT Elective
+146,MTH 110,No Equivalency,No Equivalency,MATH 103T
+147,MTH 111,No Equivalency,No Equivalency,No Equivalency
+148,MTH 120,No Equivalency,No Equivalency,MATH Elective
+149,MTH 130,No Equivalency,No Equivalency,No Equivalency
+150,MTH 131,No Equivalency,No Equivalency,No Equivalency
+151,MTH 132,No Equivalency,No Equivalency,No Equivalency
+152,MTH 133,No Equivalency,No Equivalency,No Equivalency
+153,MTH 146,No Equivalency,STAT 1120 ,No Equivalency
+154,MTH 151,No Equivalency,No Equivalency,MATH 106
+155,MTH 152,No Equivalency,No Equivalency,MATH Elective & MATH 106
+156,MTH 154,MATH 1XX5F,MATH 1005T ,MATH 106
+157,MTH 155,STAT 2004,STAT 1100 ,STAT 105T
+158,MTH 156,MATH 1624,No Equivalency,No Equivalency
+159,MTH 157,No Equivalency,No Equivalency,STAT 105T
+160,MTH 161,MATH 1014 + 1XXP,No Equivalency,MATH 103T
+161,MTH 162,MATH Elective,No Equivalency,MATH 104
+162,MTH 163,No Equivalency,No Equivalency,MATH 103T
+163,MTH 164,No Equivalency,No Equivalency,MATH 104
+164,MTH 165,No Equivalency,MATH 1005T ,MATH Elective
+165,MTH 166,No Equivalency,No Equivalency,MATH 105
+166,MTH 167,MATH 1014+1XXP,No Equivalency,MATH 105
+167,MTH 168,No Equivalency,No Equivalency,MATH 104
+168,MTH 170,No Equivalency,No Equivalency,MATH 106
+169,MTH 172,No Equivalency,No Equivalency,MATH Elective & MATH 105
+170,MTH 173,No Equivalency,No Equivalency,MATH 113
+171,MTH 174,No Equivalency,No Equivalency,MATH 114
+172,MTH 175,No Equivalency,No Equivalency,MATH Elective & MATH 113
+173,MTH 176,No Equivalency,No Equivalency,MATH Elective & MATH 113
+174,MTH 180,No Equivalency,No Equivalency,MATH 111
+175,MTH 181,No Equivalency,No Equivalency,MATH 111
+176,MTH 182,No Equivalency,No Equivalency,MATH 110
+177,MTH 190,No Equivalency,No Equivalency,GENL Elective
+178,MTH 193,MATH Elective,MATH 1000T ,No Equivalency
+179,MTH 195,MATH Elective,MATH 1000T ,MATH Elective
+180,MTH 196,No Equivalency,No Equivalency,No Equivalency
+181,MTH 197,No Equivalency,No Equivalency,No Equivalency
+182,MTH 198,No Equivalency,No Equivalency,No Equivalency
+183,MTH 199,No Equivalency,No Equivalency,No Equivalency
+184,MTH 240,No Equivalency,No Equivalency,STAT 250
+185,MTH 241,No Equivalency,No Equivalency,STAT 250
+186,MTH 242,No Equivalency,No Equivalency,STAT L350
+187,MTH 245,STAT 3005,STAT 1100 ,STAT 250
+188,MTH 246,STAT 3006,STAT 2120 ,STAT L350
+189,MTH 261,MATH 1025+1026 OR MATH 1524+1XXP,MATH 1210 ,MATH 108
+190,MTH 262,MATH 1026,MATH 1220 ,MATH Elective
+191,MTH 263,MATH 1225,MATH 1310 ,MATH 113
+192,MTH 264,MATH 1226,MATH 1320 ,MATH 114
+193,MTH 265,MATH 2204 + Elective,MATH 2310 ,MATH 213
+194,MTH 266,MATH 2114,MATH 3351 ,MATH 203
+195,MTH 267,MATH 2214,MATH 3250 ,MATH 214
+196,MTH 270,No Equivalency,No Equivalency,MATH 108
+197,MTH 271,No Equivalency,No Equivalency,MATH 108
+198,MTH 272,No Equivalency,No Equivalency,MATH 108
+199,MTH 273,No Equivalency,No Equivalency,MATH 113
+200,MTH 274,No Equivalency,No Equivalency,MATH 114
+201,MTH 275,No Equivalency,No Equivalency,MATH 213
+202,MTH 276,No Equivalency,No Equivalency,MATH 203 & MATH 214 & MATH Elective
+203,MTH 277,No Equivalency,No Equivalency,MATH 213
+204,MTH 279,No Equivalency,No Equivalency,MATH 214
+205,MTH 280,MATH Elective,No Equivalency,MATH Elective
+206,MTH 281,MATH Elective,MATH 1005T ,MATH Elective
+207,MTH 283,STAT 3104,No Equivalency,STAT L344
+208,MTH 285,No Equivalency,No Equivalency,MATH 203
+209,MTH 286,No Equivalency,No Equivalency,MATH 125
+210,MTH 288,MATH 2534,CS 2120 ,MATH 125
+211,MTH 289,MATH Elective,No Equivalency,MATH Elective
+212,MTH 290,No Equivalency,No Equivalency,GENL Elective
+213,MTH 291,No Equivalency,No Equivalency,MATH 214
+214,MTH 293,MATH Elective,No Equivalency,No Equivalency
+215,MTH 295,MATH Elective,No Equivalency,MATH Elective
+216,MTH 296,No Equivalency,No Equivalency,No Equivalency
+217,MTH 297,No Equivalency,No Equivalency,No Equivalency
+218,MTH 298,No Equivalency,No Equivalency,No Equivalency
+219,MTH 299,No Equivalency,No Equivalency,No Equivalency
+220,PHY 100,PHYS Elective4,PHYS 1005T ,PHYS 103
+221,PHY 101,No Equivalency,PHYS 1010 ,PHYS 244 & PHYS 243
+222,PHY 102,No Equivalency,PHYS 1020 ,PHYS 246 & PHYS 245
+223,PHY 111,No Equivalency,No Equivalency,No Equivalency
+224,PHY 121,No Equivalency,PHYS 1010 ,PHYS 244 & PHYS 243
+225,PHY 122,No Equivalency,PHYS 1020 ,PHYS 246 & PHYS 245
+226,PHY 130,No Equivalency,No Equivalency,PHYS Elective
+227,PHY 131,PHYS 2205,No Equivalency,PHYS Elective
+228,PHY 141,PHYS 1055 + 1155,No Equivalency,ASTR 112 & ASTR 111
+229,PHY 142,PHYS 1056 + 1156,No Equivalency,ASTR 114 & ASTR 113
+230,PHY 150,PHYS 1055 + 1155,ASTR 1005T ,ASTR 114 & ASTR 103
+231,PHY 190,No Equivalency,No Equivalency,GENL Elective
+232,PHY 195,No Equivalency,No Equivalency,PHYS Elective
+233,PHY 201,PHYS 2205 + 2215,PHYS 2010  OR PHYS 2030 ,PHYS 244 & PHYS 243
+234,PHY 202,PHYS 2206 + 2216,PHYS 2040  OR PHYS 2020 ,PHYS 246 & PHYS 245
+235,PHY 211,No Equivalency,PHYS 2010  OR PHYS 2030 ,No Equivalency
+236,PHY 212,No Equivalency,PHYS 2040  OR PHYS 2020 ,No Equivalency
+237,PHY 231,No Equivalency,PHYS 1000T  OR PHYS 1425 ,PHYS 160 & PHYS 161 & PHYS 266
+238,PHY 232,No Equivalency,PHYS 2000T  OR PHYS 2415 ,PHYS 260 & PHYS 261 & PHYS Elective
+239,PHY 241,PHYS 2305,PHYS 1000T  OR PHYS 1425 ,PHYS 161 & PHYS 160
+240,PHY 242,PHYS 2306,PHYS 2000T  OR PHYS 2415 ,PHYS 261 & PHYS 260
+241,PHY 243,PHYS 3324,PHYS 2620 ,PHYS 262
+242,PHY 244,PHYS 3324,No Equivalency,PHYS 263
+243,PHY 290,No Equivalency,No Equivalency,GENL Elective
+244,PHY 295,No Equivalency,No Equivalency,PHYS Elective
+245,PHY 298,NANO Elective,No Equivalency,No Equivalency
